@@ -1,6 +1,24 @@
 console.log('Starting notes.js');
 
-module.exports.addNote = () => {
-    console.log('addNote');
-    return 'New note';
+var addNote = (title, body) => {
+    console.log('Adding note', title, body);
+}
+
+var getAll = () => {
+    console.log('Getting all notes.');
+}
+
+var getNote = (title) => {
+    console.log('Getting a note with title:', title);
+}
+
+var removeNote = (title) => {
+    console.log('Removing a note with title:', title);
+}
+
+module.exports = {
+    addNote,
+    getAll,
+    getNote,
+    removeNote
 };
